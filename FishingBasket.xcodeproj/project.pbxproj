@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39E8D333215DF28000DF9ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D332215DF28000DF9ADD /* AppDelegate.swift */; };
+		39E8D335215DF28000DF9ADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D334215DF28000DF9ADD /* ViewController.swift */; };
+		39E8D338215DF28000DF9ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E8D336215DF28000DF9ADD /* Main.storyboard */; };
+		39E8D33B215DF28000DF9ADD /* FishingBasket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D339215DF28000DF9ADD /* FishingBasket.xcdatamodeld */; };
+		39E8D33D215DF28300DF9ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E8D33C215DF28300DF9ADD /* Assets.xcassets */; };
+		39E8D340215DF28300DF9ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E8D33E215DF28300DF9ADD /* LaunchScreen.storyboard */; };
+		39E8D34B215DF28300DF9ADD /* FishingBasketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D34A215DF28300DF9ADD /* FishingBasketTests.swift */; };
+		39E8D356215DF28300DF9ADD /* FishingBasketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D355215DF28300DF9ADD /* FishingBasketUITests.swift */; };
+		39E8D36F215E0ECF00DF9ADD /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D368215E0ECF00DF9ADD /* SettingsPresenter.swift */; };
+		39E8D370215E0ECF00DF9ADD /* SettingsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D369215E0ECF00DF9ADD /* SettingsWorker.swift */; };
+		39E8D371215E0ECF00DF9ADD /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D36A215E0ECF00DF9ADD /* SettingsRouter.swift */; };
+		39E8D372215E0ECF00DF9ADD /* SettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D36B215E0ECF00DF9ADD /* SettingsModels.swift */; };
+		39E8D373215E0ECF00DF9ADD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D36C215E0ECF00DF9ADD /* SettingsViewController.swift */; };
+		39E8D374215E0ECF00DF9ADD /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D36D215E0ECF00DF9ADD /* SettingsInteractor.swift */; };
+		39E8D375215E0ECF00DF9ADD /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D36E215E0ECF00DF9ADD /* SettingsConfigurator.swift */; };
+		39E8D37D215E0EF000DF9ADD /* ArchiveFishingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D376215E0EF000DF9ADD /* ArchiveFishingPresenter.swift */; };
+		39E8D37E215E0EF000DF9ADD /* ArchiveFishingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D377215E0EF000DF9ADD /* ArchiveFishingWorker.swift */; };
+		39E8D37F215E0EF000DF9ADD /* ArchiveFishingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D378215E0EF000DF9ADD /* ArchiveFishingRouter.swift */; };
+		39E8D380215E0EF000DF9ADD /* ArchiveFishingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D379215E0EF000DF9ADD /* ArchiveFishingModels.swift */; };
+		39E8D381215E0EF000DF9ADD /* ArchiveFishingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D37A215E0EF000DF9ADD /* ArchiveFishingViewController.swift */; };
+		39E8D382215E0EF000DF9ADD /* ArchiveFishingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D37B215E0EF000DF9ADD /* ArchiveFishingInteractor.swift */; };
+		39E8D383215E0EF000DF9ADD /* ArchiveFishingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D37C215E0EF000DF9ADD /* ArchiveFishingConfigurator.swift */; };
+		39E8D38B215E0F0700DF9ADD /* FishingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D384215E0F0700DF9ADD /* FishingPresenter.swift */; };
+		39E8D38C215E0F0700DF9ADD /* FishingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D385215E0F0700DF9ADD /* FishingWorker.swift */; };
+		39E8D38D215E0F0700DF9ADD /* FishingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D386215E0F0700DF9ADD /* FishingRouter.swift */; };
+		39E8D38E215E0F0700DF9ADD /* FishingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D387215E0F0700DF9ADD /* FishingModels.swift */; };
+		39E8D38F215E0F0700DF9ADD /* FishingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D388215E0F0700DF9ADD /* FishingViewController.swift */; };
+		39E8D390215E0F0700DF9ADD /* FishingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D389215E0F0700DF9ADD /* FishingInteractor.swift */; };
+		39E8D391215E0F0700DF9ADD /* FishingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D38A215E0F0700DF9ADD /* FishingConfigurator.swift */; };
+		39E8D399215E0F1B00DF9ADD /* FishingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D392215E0F1B00DF9ADD /* FishingsPresenter.swift */; };
+		39E8D39A215E0F1B00DF9ADD /* FishingsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D393215E0F1B00DF9ADD /* FishingsWorker.swift */; };
+		39E8D39B215E0F1B00DF9ADD /* FishingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D394215E0F1B00DF9ADD /* FishingsRouter.swift */; };
+		39E8D39C215E0F1B00DF9ADD /* FishingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D395215E0F1B00DF9ADD /* FishingsModels.swift */; };
+		39E8D39D215E0F1B00DF9ADD /* FishingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D396215E0F1B00DF9ADD /* FishingsViewController.swift */; };
+		39E8D39E215E0F1B00DF9ADD /* FishingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D397215E0F1B00DF9ADD /* FishingsInteractor.swift */; };
+		39E8D39F215E0F1B00DF9ADD /* FishingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D398215E0F1B00DF9ADD /* FishingsConfigurator.swift */; };
+		BA15BFB050122F5EB16DBA53 /* Pods_FishingBasketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6E93173FBD5B1C95E14148 /* Pods_FishingBasketUITests.framework */; };
+		CDE4DEAA4974CBFE2339243E /* Pods_FishingBasket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0946270D96F8E17C49D856A6 /* Pods_FishingBasket.framework */; };
+		F2AA8FC3B19F79A834225E8B /* Pods_FishingBasketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516C5D8539EC534F0502E2C /* Pods_FishingBasketTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39E8D347215DF28300DF9ADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39E8D327215DF28000DF9ADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39E8D32E215DF28000DF9ADD;
+			remoteInfo = FishingBasket;
+		};
+		39E8D352215DF28300DF9ADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39E8D327215DF28000DF9ADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39E8D32E215DF28000DF9ADD;
+			remoteInfo = FishingBasket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0946270D96F8E17C49D856A6 /* Pods_FishingBasket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2516C5D8539EC534F0502E2C /* Pods_FishingBasketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E8D32F215DF28000DF9ADD /* FishingBasket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingBasket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E8D332215DF28000DF9ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39E8D334215DF28000DF9ADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39E8D337215DF28000DF9ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39E8D33A215DF28000DF9ADD /* FishingBasket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishingBasket.xcdatamodel; sourceTree = "<group>"; };
+		39E8D33C215DF28300DF9ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39E8D33F215DF28300DF9ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39E8D341215DF28300DF9ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E8D346215DF28300DF9ADD /* FishingBasketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishingBasketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E8D34A215DF28300DF9ADD /* FishingBasketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingBasketTests.swift; sourceTree = "<group>"; };
+		39E8D34C215DF28300DF9ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E8D351215DF28300DF9ADD /* FishingBasketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishingBasketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E8D355215DF28300DF9ADD /* FishingBasketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingBasketUITests.swift; sourceTree = "<group>"; };
+		39E8D357215DF28300DF9ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E8D368215E0ECF00DF9ADD /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		39E8D369215E0ECF00DF9ADD /* SettingsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWorker.swift; sourceTree = "<group>"; };
+		39E8D36A215E0ECF00DF9ADD /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		39E8D36B215E0ECF00DF9ADD /* SettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModels.swift; sourceTree = "<group>"; };
+		39E8D36C215E0ECF00DF9ADD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		39E8D36D215E0ECF00DF9ADD /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		39E8D36E215E0ECF00DF9ADD /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		39E8D376215E0EF000DF9ADD /* ArchiveFishingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFishingPresenter.swift; sourceTree = "<group>"; };
+		39E8D377215E0EF000DF9ADD /* ArchiveFishingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFishingWorker.swift; sourceTree = "<group>"; };
+		39E8D378215E0EF000DF9ADD /* ArchiveFishingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFishingRouter.swift; sourceTree = "<group>"; };
+		39E8D379215E0EF000DF9ADD /* ArchiveFishingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFishingModels.swift; sourceTree = "<group>"; };
+		39E8D37A215E0EF000DF9ADD /* ArchiveFishingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFishingViewController.swift; sourceTree = "<group>"; };
+		39E8D37B215E0EF000DF9ADD /* ArchiveFishingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFishingInteractor.swift; sourceTree = "<group>"; };
+		39E8D37C215E0EF000DF9ADD /* ArchiveFishingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFishingConfigurator.swift; sourceTree = "<group>"; };
+		39E8D384215E0F0700DF9ADD /* FishingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingPresenter.swift; sourceTree = "<group>"; };
+		39E8D385215E0F0700DF9ADD /* FishingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingWorker.swift; sourceTree = "<group>"; };
+		39E8D386215E0F0700DF9ADD /* FishingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingRouter.swift; sourceTree = "<group>"; };
+		39E8D387215E0F0700DF9ADD /* FishingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingModels.swift; sourceTree = "<group>"; };
+		39E8D388215E0F0700DF9ADD /* FishingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingViewController.swift; sourceTree = "<group>"; };
+		39E8D389215E0F0700DF9ADD /* FishingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingInteractor.swift; sourceTree = "<group>"; };
+		39E8D38A215E0F0700DF9ADD /* FishingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingConfigurator.swift; sourceTree = "<group>"; };
+		39E8D392215E0F1B00DF9ADD /* FishingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsPresenter.swift; sourceTree = "<group>"; };
+		39E8D393215E0F1B00DF9ADD /* FishingsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsWorker.swift; sourceTree = "<group>"; };
+		39E8D394215E0F1B00DF9ADD /* FishingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsRouter.swift; sourceTree = "<group>"; };
+		39E8D395215E0F1B00DF9ADD /* FishingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsModels.swift; sourceTree = "<group>"; };
+		39E8D396215E0F1B00DF9ADD /* FishingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsViewController.swift; sourceTree = "<group>"; };
+		39E8D397215E0F1B00DF9ADD /* FishingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsInteractor.swift; sourceTree = "<group>"; };
+		39E8D398215E0F1B00DF9ADD /* FishingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsConfigurator.swift; sourceTree = "<group>"; };
+		3B33C3375F4046D167A786C0 /* Pods-FishingBasketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketTests/Pods-FishingBasketTests.release.xcconfig"; sourceTree = "<group>"; };
+		46FB92A0D2A72962B515E921 /* Pods-FishingBasketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketUITests/Pods-FishingBasketUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B6E93173FBD5B1C95E14148 /* Pods_FishingBasketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF7207E5D7625A6C30C5C01 /* Pods-FishingBasket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasket.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket.release.xcconfig"; sourceTree = "<group>"; };
+		C1BFAE3FE85DE4C767A65AEF /* Pods-FishingBasketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketTests/Pods-FishingBasketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC9789CBC7FC67EF76A701D3 /* Pods-FishingBasketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketUITests/Pods-FishingBasketUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2D24CCD7EF845693310AFFF /* Pods-FishingBasket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39E8D32C215DF28000DF9ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE4DEAA4974CBFE2339243E /* Pods_FishingBasket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E8D343215DF28300DF9ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2AA8FC3B19F79A834225E8B /* Pods_FishingBasketTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E8D34E215DF28300DF9ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA15BFB050122F5EB16DBA53 /* Pods_FishingBasketUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39E8D326215DF28000DF9ADD = {
+			isa = PBXGroup;
+			children = (
+				39E8D331215DF28000DF9ADD /* FishingBasket */,
+				39E8D349215DF28300DF9ADD /* FishingBasketTests */,
+				39E8D354215DF28300DF9ADD /* FishingBasketUITests */,
+				39E8D330215DF28000DF9ADD /* Products */,
+				CE6BE387D68E9C6E427BB0EA /* Pods */,
+				85172742392F21FB2BEAB37A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39E8D330215DF28000DF9ADD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39E8D32F215DF28000DF9ADD /* FishingBasket.app */,
+				39E8D346215DF28300DF9ADD /* FishingBasketTests.xctest */,
+				39E8D351215DF28300DF9ADD /* FishingBasketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39E8D331215DF28000DF9ADD /* FishingBasket */ = {
+			isa = PBXGroup;
+			children = (
+				39E8D363215E07FE00DF9ADD /* Scenes */,
+				39E8D332215DF28000DF9ADD /* AppDelegate.swift */,
+				39E8D334215DF28000DF9ADD /* ViewController.swift */,
+				39E8D336215DF28000DF9ADD /* Main.storyboard */,
+				39E8D33C215DF28300DF9ADD /* Assets.xcassets */,
+				39E8D33E215DF28300DF9ADD /* LaunchScreen.storyboard */,
+				39E8D341215DF28300DF9ADD /* Info.plist */,
+				39E8D339215DF28000DF9ADD /* FishingBasket.xcdatamodeld */,
+			);
+			path = FishingBasket;
+			sourceTree = "<group>";
+		};
+		39E8D349215DF28300DF9ADD /* FishingBasketTests */ = {
+			isa = PBXGroup;
+			children = (
+				39E8D34A215DF28300DF9ADD /* FishingBasketTests.swift */,
+				39E8D34C215DF28300DF9ADD /* Info.plist */,
+			);
+			path = FishingBasketTests;
+			sourceTree = "<group>";
+		};
+		39E8D354215DF28300DF9ADD /* FishingBasketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39E8D355215DF28300DF9ADD /* FishingBasketUITests.swift */,
+				39E8D357215DF28300DF9ADD /* Info.plist */,
+			);
+			path = FishingBasketUITests;
+			sourceTree = "<group>";
+		};
+		39E8D363215E07FE00DF9ADD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				39E8D367215E086B00DF9ADD /* Settings */,
+				39E8D366215E085500DF9ADD /* ArchiveFishing */,
+				39E8D365215E084400DF9ADD /* Fishing */,
+				39E8D364215E081900DF9ADD /* Fishings */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		39E8D364215E081900DF9ADD /* Fishings */ = {
+			isa = PBXGroup;
+			children = (
+				39E8D392215E0F1B00DF9ADD /* FishingsPresenter.swift */,
+				39E8D393215E0F1B00DF9ADD /* FishingsWorker.swift */,
+				39E8D394215E0F1B00DF9ADD /* FishingsRouter.swift */,
+				39E8D395215E0F1B00DF9ADD /* FishingsModels.swift */,
+				39E8D396215E0F1B00DF9ADD /* FishingsViewController.swift */,
+				39E8D397215E0F1B00DF9ADD /* FishingsInteractor.swift */,
+				39E8D398215E0F1B00DF9ADD /* FishingsConfigurator.swift */,
+			);
+			path = Fishings;
+			sourceTree = "<group>";
+		};
+		39E8D365215E084400DF9ADD /* Fishing */ = {
+			isa = PBXGroup;
+			children = (
+				39E8D384215E0F0700DF9ADD /* FishingPresenter.swift */,
+				39E8D385215E0F0700DF9ADD /* FishingWorker.swift */,
+				39E8D386215E0F0700DF9ADD /* FishingRouter.swift */,
+				39E8D387215E0F0700DF9ADD /* FishingModels.swift */,
+				39E8D388215E0F0700DF9ADD /* FishingViewController.swift */,
+				39E8D389215E0F0700DF9ADD /* FishingInteractor.swift */,
+				39E8D38A215E0F0700DF9ADD /* FishingConfigurator.swift */,
+			);
+			path = Fishing;
+			sourceTree = "<group>";
+		};
+		39E8D366215E085500DF9ADD /* ArchiveFishing */ = {
+			isa = PBXGroup;
+			children = (
+				39E8D376215E0EF000DF9ADD /* ArchiveFishingPresenter.swift */,
+				39E8D377215E0EF000DF9ADD /* ArchiveFishingWorker.swift */,
+				39E8D378215E0EF000DF9ADD /* ArchiveFishingRouter.swift */,
+				39E8D379215E0EF000DF9ADD /* ArchiveFishingModels.swift */,
+				39E8D37A215E0EF000DF9ADD /* ArchiveFishingViewController.swift */,
+				39E8D37B215E0EF000DF9ADD /* ArchiveFishingInteractor.swift */,
+				39E8D37C215E0EF000DF9ADD /* ArchiveFishingConfigurator.swift */,
+			);
+			path = ArchiveFishing;
+			sourceTree = "<group>";
+		};
+		39E8D367215E086B00DF9ADD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				39E8D368215E0ECF00DF9ADD /* SettingsPresenter.swift */,
+				39E8D369215E0ECF00DF9ADD /* SettingsWorker.swift */,
+				39E8D36A215E0ECF00DF9ADD /* SettingsRouter.swift */,
+				39E8D36B215E0ECF00DF9ADD /* SettingsModels.swift */,
+				39E8D36C215E0ECF00DF9ADD /* SettingsViewController.swift */,
+				39E8D36D215E0ECF00DF9ADD /* SettingsInteractor.swift */,
+				39E8D36E215E0ECF00DF9ADD /* SettingsConfigurator.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		85172742392F21FB2BEAB37A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0946270D96F8E17C49D856A6 /* Pods_FishingBasket.framework */,
+				2516C5D8539EC534F0502E2C /* Pods_FishingBasketTests.framework */,
+				5B6E93173FBD5B1C95E14148 /* Pods_FishingBasketUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE6BE387D68E9C6E427BB0EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2D24CCD7EF845693310AFFF /* Pods-FishingBasket.debug.xcconfig */,
+				6CF7207E5D7625A6C30C5C01 /* Pods-FishingBasket.release.xcconfig */,
+				C1BFAE3FE85DE4C767A65AEF /* Pods-FishingBasketTests.debug.xcconfig */,
+				3B33C3375F4046D167A786C0 /* Pods-FishingBasketTests.release.xcconfig */,
+				46FB92A0D2A72962B515E921 /* Pods-FishingBasketUITests.debug.xcconfig */,
+				DC9789CBC7FC67EF76A701D3 /* Pods-FishingBasketUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39E8D32E215DF28000DF9ADD /* FishingBasket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E8D35A215DF28300DF9ADD /* Build configuration list for PBXNativeTarget "FishingBasket" */;
+			buildPhases = (
+				76DDDF688FBDCE347372DD09 /* [CP] Check Pods Manifest.lock */,
+				39E8D32B215DF28000DF9ADD /* Sources */,
+				39E8D32C215DF28000DF9ADD /* Frameworks */,
+				39E8D32D215DF28000DF9ADD /* Resources */,
+				6180A730A9E0C1F85ED09B06 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FishingBasket;
+			productName = FishingBasket;
+			productReference = 39E8D32F215DF28000DF9ADD /* FishingBasket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39E8D345215DF28300DF9ADD /* FishingBasketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E8D35D215DF28300DF9ADD /* Build configuration list for PBXNativeTarget "FishingBasketTests" */;
+			buildPhases = (
+				D8B83EC417363E799897C94D /* [CP] Check Pods Manifest.lock */,
+				39E8D342215DF28300DF9ADD /* Sources */,
+				39E8D343215DF28300DF9ADD /* Frameworks */,
+				39E8D344215DF28300DF9ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39E8D348215DF28300DF9ADD /* PBXTargetDependency */,
+			);
+			name = FishingBasketTests;
+			productName = FishingBasketTests;
+			productReference = 39E8D346215DF28300DF9ADD /* FishingBasketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39E8D350215DF28300DF9ADD /* FishingBasketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E8D360215DF28300DF9ADD /* Build configuration list for PBXNativeTarget "FishingBasketUITests" */;
+			buildPhases = (
+				39A808A7B83C15A60BB17889 /* [CP] Check Pods Manifest.lock */,
+				39E8D34D215DF28300DF9ADD /* Sources */,
+				39E8D34E215DF28300DF9ADD /* Frameworks */,
+				39E8D34F215DF28300DF9ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39E8D353215DF28300DF9ADD /* PBXTargetDependency */,
+			);
+			name = FishingBasketUITests;
+			productName = FishingBasketUITests;
+			productReference = 39E8D351215DF28300DF9ADD /* FishingBasketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39E8D327215DF28000DF9ADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Дмитрий Кривенко";
+				TargetAttributes = {
+					39E8D32E215DF28000DF9ADD = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					39E8D345215DF28300DF9ADD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 39E8D32E215DF28000DF9ADD;
+					};
+					39E8D350215DF28300DF9ADD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 39E8D32E215DF28000DF9ADD;
+					};
+				};
+			};
+			buildConfigurationList = 39E8D32A215DF28000DF9ADD /* Build configuration list for PBXProject "FishingBasket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39E8D326215DF28000DF9ADD;
+			productRefGroup = 39E8D330215DF28000DF9ADD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39E8D32E215DF28000DF9ADD /* FishingBasket */,
+				39E8D345215DF28300DF9ADD /* FishingBasketTests */,
+				39E8D350215DF28300DF9ADD /* FishingBasketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39E8D32D215DF28000DF9ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E8D340215DF28300DF9ADD /* LaunchScreen.storyboard in Resources */,
+				39E8D33D215DF28300DF9ADD /* Assets.xcassets in Resources */,
+				39E8D338215DF28000DF9ADD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E8D344215DF28300DF9ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E8D34F215DF28300DF9ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39A808A7B83C15A60BB17889 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FishingBasketUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6180A730A9E0C1F85ED09B06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76DDDF688FBDCE347372DD09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FishingBasket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B83EC417363E799897C94D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FishingBasketTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39E8D32B215DF28000DF9ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E8D335215DF28000DF9ADD /* ViewController.swift in Sources */,
+				39E8D38F215E0F0700DF9ADD /* FishingViewController.swift in Sources */,
+				39E8D37F215E0EF000DF9ADD /* ArchiveFishingRouter.swift in Sources */,
+				39E8D39D215E0F1B00DF9ADD /* FishingsViewController.swift in Sources */,
+				39E8D375215E0ECF00DF9ADD /* SettingsConfigurator.swift in Sources */,
+				39E8D372215E0ECF00DF9ADD /* SettingsModels.swift in Sources */,
+				39E8D333215DF28000DF9ADD /* AppDelegate.swift in Sources */,
+				39E8D39E215E0F1B00DF9ADD /* FishingsInteractor.swift in Sources */,
+				39E8D370215E0ECF00DF9ADD /* SettingsWorker.swift in Sources */,
+				39E8D391215E0F0700DF9ADD /* FishingConfigurator.swift in Sources */,
+				39E8D383215E0EF000DF9ADD /* ArchiveFishingConfigurator.swift in Sources */,
+				39E8D39B215E0F1B00DF9ADD /* FishingsRouter.swift in Sources */,
+				39E8D381215E0EF000DF9ADD /* ArchiveFishingViewController.swift in Sources */,
+				39E8D38C215E0F0700DF9ADD /* FishingWorker.swift in Sources */,
+				39E8D371215E0ECF00DF9ADD /* SettingsRouter.swift in Sources */,
+				39E8D37D215E0EF000DF9ADD /* ArchiveFishingPresenter.swift in Sources */,
+				39E8D33B215DF28000DF9ADD /* FishingBasket.xcdatamodeld in Sources */,
+				39E8D36F215E0ECF00DF9ADD /* SettingsPresenter.swift in Sources */,
+				39E8D37E215E0EF000DF9ADD /* ArchiveFishingWorker.swift in Sources */,
+				39E8D373215E0ECF00DF9ADD /* SettingsViewController.swift in Sources */,
+				39E8D38D215E0F0700DF9ADD /* FishingRouter.swift in Sources */,
+				39E8D39A215E0F1B00DF9ADD /* FishingsWorker.swift in Sources */,
+				39E8D39F215E0F1B00DF9ADD /* FishingsConfigurator.swift in Sources */,
+				39E8D38E215E0F0700DF9ADD /* FishingModels.swift in Sources */,
+				39E8D390215E0F0700DF9ADD /* FishingInteractor.swift in Sources */,
+				39E8D374215E0ECF00DF9ADD /* SettingsInteractor.swift in Sources */,
+				39E8D38B215E0F0700DF9ADD /* FishingPresenter.swift in Sources */,
+				39E8D382215E0EF000DF9ADD /* ArchiveFishingInteractor.swift in Sources */,
+				39E8D380215E0EF000DF9ADD /* ArchiveFishingModels.swift in Sources */,
+				39E8D39C215E0F1B00DF9ADD /* FishingsModels.swift in Sources */,
+				39E8D399215E0F1B00DF9ADD /* FishingsPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E8D342215DF28300DF9ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E8D34B215DF28300DF9ADD /* FishingBasketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E8D34D215DF28300DF9ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E8D356215DF28300DF9ADD /* FishingBasketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39E8D348215DF28300DF9ADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39E8D32E215DF28000DF9ADD /* FishingBasket */;
+			targetProxy = 39E8D347215DF28300DF9ADD /* PBXContainerItemProxy */;
+		};
+		39E8D353215DF28300DF9ADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39E8D32E215DF28000DF9ADD /* FishingBasket */;
+			targetProxy = 39E8D352215DF28300DF9ADD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39E8D336215DF28000DF9ADD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39E8D337215DF28000DF9ADD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39E8D33E215DF28300DF9ADD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39E8D33F215DF28300DF9ADD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39E8D358215DF28300DF9ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39E8D359215DF28300DF9ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39E8D35B215DF28300DF9ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D24CCD7EF845693310AFFF /* Pods-FishingBasket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY49V76AN4;
+				INFOPLIST_FILE = FishingBasket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriykrivenko.FishingBasket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39E8D35C215DF28300DF9ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF7207E5D7625A6C30C5C01 /* Pods-FishingBasket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY49V76AN4;
+				INFOPLIST_FILE = FishingBasket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriykrivenko.FishingBasket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39E8D35E215DF28300DF9ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1BFAE3FE85DE4C767A65AEF /* Pods-FishingBasketTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY49V76AN4;
+				INFOPLIST_FILE = FishingBasketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriykrivenko.FishingBasketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishingBasket.app/FishingBasket";
+			};
+			name = Debug;
+		};
+		39E8D35F215DF28300DF9ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B33C3375F4046D167A786C0 /* Pods-FishingBasketTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY49V76AN4;
+				INFOPLIST_FILE = FishingBasketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriykrivenko.FishingBasketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishingBasket.app/FishingBasket";
+			};
+			name = Release;
+		};
+		39E8D361215DF28300DF9ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46FB92A0D2A72962B515E921 /* Pods-FishingBasketUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY49V76AN4;
+				INFOPLIST_FILE = FishingBasketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriykrivenko.FishingBasketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FishingBasket;
+			};
+			name = Debug;
+		};
+		39E8D362215DF28300DF9ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9789CBC7FC67EF76A701D3 /* Pods-FishingBasketUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY49V76AN4;
+				INFOPLIST_FILE = FishingBasketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dmitriykrivenko.FishingBasketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FishingBasket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39E8D32A215DF28000DF9ADD /* Build configuration list for PBXProject "FishingBasket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E8D358215DF28300DF9ADD /* Debug */,
+				39E8D359215DF28300DF9ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39E8D35A215DF28300DF9ADD /* Build configuration list for PBXNativeTarget "FishingBasket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E8D35B215DF28300DF9ADD /* Debug */,
+				39E8D35C215DF28300DF9ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39E8D35D215DF28300DF9ADD /* Build configuration list for PBXNativeTarget "FishingBasketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E8D35E215DF28300DF9ADD /* Debug */,
+				39E8D35F215DF28300DF9ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39E8D360215DF28300DF9ADD /* Build configuration list for PBXNativeTarget "FishingBasketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E8D361215DF28300DF9ADD /* Debug */,
+				39E8D362215DF28300DF9ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		39E8D339215DF28000DF9ADD /* FishingBasket.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39E8D33A215DF28000DF9ADD /* FishingBasket.xcdatamodel */,
+			);
+			currentVersion = 39E8D33A215DF28000DF9ADD /* FishingBasket.xcdatamodel */;
+			path = FishingBasket.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39E8D327215DF28000DF9ADD /* Project object */;
+}

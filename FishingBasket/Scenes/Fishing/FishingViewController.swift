@@ -9,7 +9,7 @@
 import UIKit
 
 protocol FishingDisplayLogic: class {
-  func displaySomething(viewModel: Fishing.Show.ViewModel)
+  func displayFishing(viewModel: Fishing.Show.ViewModel)
 }
 
 class FishingViewController: UIViewController, FishingDisplayLogic {
@@ -45,7 +45,7 @@ class FishingViewController: UIViewController, FishingDisplayLogic {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
-    doSomething()
+    doShow()
   }
   
   override func viewDidLayoutSubviews() {
@@ -55,31 +55,65 @@ class FishingViewController: UIViewController, FishingDisplayLogic {
   
   // MARK: - Do something
   
-  func doSomething() {
+  func doShow() {
     let request = Fishing.Show.Request()
     interactor?.doSomething(request: request)
   }
   
-  func displaySomething(viewModel: Fishing.Show.ViewModel) {
+  func displayFishing(viewModel: Fishing.Show.ViewModel) {
     //name.text = viewModel.name
   }
   
   // MARK: - Setup UI
   
-  //lazy var button: UIButton = {
-  //  var button = UIButton()
-  //  button.addTarget(self, action: #selector(action), for: .touchUpInside)
-  //  return button
-  //}()
+  lazy var fishesView: UIView = {
+    let view = UIView()
+    view.backgroundColor = UIColor.gray
+    return view
+  }()
+  
+  lazy var counterView: UIView = {
+    let view = UIView()
+    view.backgroundColor = UIColor.red
+    return view
+  }()
+  
+  lazy var weightView: UIView = {
+    let view = UIView()
+    view.backgroundColor = UIColor.green
+    return view
+  }()
   
   private func setupViews() {
-    //self.view.addSubview(button)
+    self.view.addSubview(self.fishesView)
+    self.view.addSubview(self.counterView)
+    self.view.addSubview(self.weightView)
   }
   
   private func setupConstraints() {
-    //self.button.snp.makeConstraints { (make) -> Void in
-    //  make.size.equalTo(50)
-    //  make.top.equalToSuperview()
-    //}
+    self.fishesView.snp.makeConstraints { (maker) in
+      maker.width.equalToSuperview()
+      maker.height.equalToSuperview().multipliedBy(0.26)
+      maker.top.equalToSuperview()
+    }
+    
+    self.counterView.snp.makeConstraints { (maker) in
+      maker.width.equalToSuperview()
+      maker.top.equalTo(self.fishesView.snp.bottom)
+      maker.bottom.equalTo(self.weightView.snp.top)
+    }
+    
+    self.weightView.snp.makeConstraints { (maker) in
+      maker.width.equalToSuperview()
+      maker.top.equalTo(self.counterView.snp.bottom)
+      maker.bottom.equalTo(self.view)
+      maker.height.equalToSuperview().multipliedBy(0.26)
+    }
+    
+    self.view.snp.makeConstraints { (maker) in
+      maker.size.equalTo(UIScreen.main.bounds.size)
+      maker.top.equalTo(0)
+      maker.left.equalTo(0)
+    }
   }
 }

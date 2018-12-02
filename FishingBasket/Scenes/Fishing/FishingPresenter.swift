@@ -19,6 +19,6 @@ class FishingPresenter: FishingPresentationLogic {
   
   func presentSomething(response: Fishing.Show.Response) {
     let viewModel = Fishing.Show.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
+    viewController?.displayFishing(viewModel: viewModel)
   }
 }

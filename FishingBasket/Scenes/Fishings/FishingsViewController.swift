@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import SnapKit
 
 protocol FishingsDisplayLogic: class {
-  func displaySomething(viewModel: Fishings.Show.ViewModel)
+  func displayFishings(viewModel: Fishings.Show.ViewModel)
 }
 
 class FishingsViewController: UIViewController, FishingsDisplayLogic {
   var interactor: FishingsBusinessLogic?
   var router: (NSObjectProtocol & FishingsRoutingLogic & FishingsDataPassing)?
 
+  // MARK: - Setup UI
+  
+  
   // MARK: - Object lifecycle
   
   init(configurator: FishingsConfigurator = FishingsConfigurator.sharedInstance) {
@@ -45,7 +49,7 @@ class FishingsViewController: UIViewController, FishingsDisplayLogic {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
-    doSomething()
+    doShow()
   }
   
   override func viewDidLayoutSubviews() {
@@ -55,31 +59,24 @@ class FishingsViewController: UIViewController, FishingsDisplayLogic {
   
   // MARK: - Do something
   
-  func doSomething() {
+  func doShow() {
     let request = Fishings.Show.Request()
-    interactor?.doSomething(request: request)
+    interactor?.doShow(request: request)
   }
   
-  func displaySomething(viewModel: Fishings.Show.ViewModel) {
+  func displayFishings(viewModel: Fishings.Show.ViewModel) {
     //name.text = viewModel.name
   }
   
-  // MARK: - Setup UI
-  
-  //lazy var button: UIButton = {
-  //  var button = UIButton()
-  //  button.addTarget(self, action: #selector(action), for: .touchUpInside)
-  //  return button
-  //}()
-  
   private func setupViews() {
-    //self.view.addSubview(button)
+
   }
   
   private func setupConstraints() {
-    //self.button.snp.makeConstraints { (make) -> Void in
-    //  make.size.equalTo(50)
-    //  make.top.equalToSuperview()
-    //}
+
+  }
+  
+  private func setNavigation() {
+    self.navigationController?.show(self, sender: nil)
   }
 }

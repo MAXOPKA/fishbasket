@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393BA08721B41B5300D2A819 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BA08621B41B5300D2A819 /* CounterView.swift */; };
+		393BA08B21B421C300D2A819 /* FishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BA08A21B421C300D2A819 /* FishesView.swift */; };
+		393BA08D21B421E600D2A819 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BA08C21B421E600D2A819 /* WeightView.swift */; };
+		393BA08F21B4224900D2A819 /* FishItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BA08E21B4224900D2A819 /* FishItem.swift */; };
+		393BA09121B4234300D2A819 /* WeightItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BA09021B4234300D2A819 /* WeightItem.swift */; };
 		39E8D333215DF28000DF9ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D332215DF28000DF9ADD /* AppDelegate.swift */; };
 		39E8D335215DF28000DF9ADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D334215DF28000DF9ADD /* ViewController.swift */; };
 		39E8D338215DF28000DF9ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E8D336215DF28000DF9ADD /* Main.storyboard */; };
@@ -69,6 +74,11 @@
 		0946270D96F8E17C49D856A6 /* Pods_FishingBasket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18218EBFC6791F9FDEC542D0 /* Pods-FishingBasket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasket.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket.release.xcconfig"; sourceTree = "<group>"; };
 		2516C5D8539EC534F0502E2C /* Pods_FishingBasketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		393BA08621B41B5300D2A819 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		393BA08A21B421C300D2A819 /* FishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesView.swift; sourceTree = "<group>"; };
+		393BA08C21B421E600D2A819 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
+		393BA08E21B4224900D2A819 /* FishItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishItem.swift; sourceTree = "<group>"; };
+		393BA09021B4234300D2A819 /* WeightItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightItem.swift; sourceTree = "<group>"; };
 		39E8D32F215DF28000DF9ADD /* FishingBasket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingBasket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E8D332215DF28000DF9ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39E8D334215DF28000DF9ADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +157,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		393BA08521B41B2B00D2A819 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				393BA08621B41B5300D2A819 /* CounterView.swift */,
+				393BA08A21B421C300D2A819 /* FishesView.swift */,
+				393BA08C21B421E600D2A819 /* WeightView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		393BA08821B41FB500D2A819 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		393BA08921B41FC400D2A819 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				393BA08E21B4224900D2A819 /* FishItem.swift */,
+				393BA09021B4234300D2A819 /* WeightItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		39E8D326215DF28000DF9ADD = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +208,8 @@
 		39E8D331215DF28000DF9ADD /* FishingBasket */ = {
 			isa = PBXGroup;
 			children = (
+				393BA08921B41FC400D2A819 /* Components */,
+				393BA08821B41FB500D2A819 /* Extensions */,
 				39E8D363215E07FE00DF9ADD /* Scenes */,
 				39E8D332215DF28000DF9ADD /* AppDelegate.swift */,
 				39E8D334215DF28000DF9ADD /* ViewController.swift */,
@@ -230,6 +268,7 @@
 		39E8D365215E084400DF9ADD /* Fishing */ = {
 			isa = PBXGroup;
 			children = (
+				393BA08521B41B2B00D2A819 /* Views */,
 				39E8D384215E0F0700DF9ADD /* FishingPresenter.swift */,
 				39E8D385215E0F0700DF9ADD /* FishingWorker.swift */,
 				39E8D386215E0F0700DF9ADD /* FishingRouter.swift */,
@@ -524,7 +563,9 @@
 				39E8D39D215E0F1B00DF9ADD /* FishingsViewController.swift in Sources */,
 				39E8D375215E0ECF00DF9ADD /* SettingsConfigurator.swift in Sources */,
 				39E8D372215E0ECF00DF9ADD /* SettingsModels.swift in Sources */,
+				393BA08B21B421C300D2A819 /* FishesView.swift in Sources */,
 				39E8D333215DF28000DF9ADD /* AppDelegate.swift in Sources */,
+				393BA08721B41B5300D2A819 /* CounterView.swift in Sources */,
 				39E8D39E215E0F1B00DF9ADD /* FishingsInteractor.swift in Sources */,
 				39E8D370215E0ECF00DF9ADD /* SettingsWorker.swift in Sources */,
 				39E8D391215E0F0700DF9ADD /* FishingConfigurator.swift in Sources */,
@@ -534,12 +575,15 @@
 				39E8D38C215E0F0700DF9ADD /* FishingWorker.swift in Sources */,
 				39E8D371215E0ECF00DF9ADD /* SettingsRouter.swift in Sources */,
 				39E8D37D215E0EF000DF9ADD /* ArchiveFishingPresenter.swift in Sources */,
+				393BA08D21B421E600D2A819 /* WeightView.swift in Sources */,
 				39E8D33B215DF28000DF9ADD /* FishingBasket.xcdatamodeld in Sources */,
 				39E8D36F215E0ECF00DF9ADD /* SettingsPresenter.swift in Sources */,
 				39E8D37E215E0EF000DF9ADD /* ArchiveFishingWorker.swift in Sources */,
 				39E8D373215E0ECF00DF9ADD /* SettingsViewController.swift in Sources */,
 				39E8D38D215E0F0700DF9ADD /* FishingRouter.swift in Sources */,
+				393BA08F21B4224900D2A819 /* FishItem.swift in Sources */,
 				39E8D39A215E0F1B00DF9ADD /* FishingsWorker.swift in Sources */,
+				393BA09121B4234300D2A819 /* WeightItem.swift in Sources */,
 				39E8D39F215E0F1B00DF9ADD /* FishingsConfigurator.swift in Sources */,
 				39E8D38E215E0F0700DF9ADD /* FishingModels.swift in Sources */,
 				39E8D390215E0F0700DF9ADD /* FishingInteractor.swift in Sources */,

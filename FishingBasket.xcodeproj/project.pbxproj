@@ -67,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		0946270D96F8E17C49D856A6 /* Pods_FishingBasket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18218EBFC6791F9FDEC542D0 /* Pods-FishingBasket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasket.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket.release.xcconfig"; sourceTree = "<group>"; };
 		2516C5D8539EC534F0502E2C /* Pods_FishingBasketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E8D32F215DF28000DF9ADD /* FishingBasket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingBasket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E8D332215DF28000DF9ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,13 +111,12 @@
 		39E8D396215E0F1B00DF9ADD /* FishingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsViewController.swift; sourceTree = "<group>"; };
 		39E8D397215E0F1B00DF9ADD /* FishingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsInteractor.swift; sourceTree = "<group>"; };
 		39E8D398215E0F1B00DF9ADD /* FishingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsConfigurator.swift; sourceTree = "<group>"; };
-		3B33C3375F4046D167A786C0 /* Pods-FishingBasketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketTests/Pods-FishingBasketTests.release.xcconfig"; sourceTree = "<group>"; };
-		46FB92A0D2A72962B515E921 /* Pods-FishingBasketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketUITests/Pods-FishingBasketUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B6E93173FBD5B1C95E14148 /* Pods_FishingBasketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CF7207E5D7625A6C30C5C01 /* Pods-FishingBasket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasket.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket.release.xcconfig"; sourceTree = "<group>"; };
-		C1BFAE3FE85DE4C767A65AEF /* Pods-FishingBasketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketTests/Pods-FishingBasketTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DC9789CBC7FC67EF76A701D3 /* Pods-FishingBasketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketUITests/Pods-FishingBasketUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E2D24CCD7EF845693310AFFF /* Pods-FishingBasket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket.debug.xcconfig"; sourceTree = "<group>"; };
+		92B207EC29936089AE3FED6E /* Pods-FishingBasketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketTests/Pods-FishingBasketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DFFBD57705F384E4AC7B49E /* Pods-FishingBasketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketUITests/Pods-FishingBasketUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A04F4636D94115C33B932435 /* Pods-FishingBasketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketUITests/Pods-FishingBasketUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C76838B240276F25877DE37F /* Pods-FishingBasketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketTests/Pods-FishingBasketTests.release.xcconfig"; sourceTree = "<group>"; };
+		FECB66AD405246A9DBDF74F8 /* Pods-FishingBasket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,12 +282,12 @@
 		CE6BE387D68E9C6E427BB0EA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E2D24CCD7EF845693310AFFF /* Pods-FishingBasket.debug.xcconfig */,
-				6CF7207E5D7625A6C30C5C01 /* Pods-FishingBasket.release.xcconfig */,
-				C1BFAE3FE85DE4C767A65AEF /* Pods-FishingBasketTests.debug.xcconfig */,
-				3B33C3375F4046D167A786C0 /* Pods-FishingBasketTests.release.xcconfig */,
-				46FB92A0D2A72962B515E921 /* Pods-FishingBasketUITests.debug.xcconfig */,
-				DC9789CBC7FC67EF76A701D3 /* Pods-FishingBasketUITests.release.xcconfig */,
+				FECB66AD405246A9DBDF74F8 /* Pods-FishingBasket.debug.xcconfig */,
+				18218EBFC6791F9FDEC542D0 /* Pods-FishingBasket.release.xcconfig */,
+				92B207EC29936089AE3FED6E /* Pods-FishingBasketTests.debug.xcconfig */,
+				C76838B240276F25877DE37F /* Pods-FishingBasketTests.release.xcconfig */,
+				A04F4636D94115C33B932435 /* Pods-FishingBasketUITests.debug.xcconfig */,
+				9DFFBD57705F384E4AC7B49E /* Pods-FishingBasketUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -721,16 +721,15 @@
 		};
 		39E8D35B215DF28300DF9ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2D24CCD7EF845693310AFFF /* Pods-FishingBasket.debug.xcconfig */;
+			baseConfigurationReference = FECB66AD405246A9DBDF74F8 /* Pods-FishingBasket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RY49V76AN4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FishingBasket/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dmitriykrivenko.FishingBasket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -740,16 +739,15 @@
 		};
 		39E8D35C215DF28300DF9ADD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CF7207E5D7625A6C30C5C01 /* Pods-FishingBasket.release.xcconfig */;
+			baseConfigurationReference = 18218EBFC6791F9FDEC542D0 /* Pods-FishingBasket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RY49V76AN4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FishingBasket/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dmitriykrivenko.FishingBasket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -759,7 +757,7 @@
 		};
 		39E8D35E215DF28300DF9ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1BFAE3FE85DE4C767A65AEF /* Pods-FishingBasketTests.debug.xcconfig */;
+			baseConfigurationReference = 92B207EC29936089AE3FED6E /* Pods-FishingBasketTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -781,7 +779,7 @@
 		};
 		39E8D35F215DF28300DF9ADD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B33C3375F4046D167A786C0 /* Pods-FishingBasketTests.release.xcconfig */;
+			baseConfigurationReference = C76838B240276F25877DE37F /* Pods-FishingBasketTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -803,7 +801,7 @@
 		};
 		39E8D361215DF28300DF9ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46FB92A0D2A72962B515E921 /* Pods-FishingBasketUITests.debug.xcconfig */;
+			baseConfigurationReference = A04F4636D94115C33B932435 /* Pods-FishingBasketUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -824,7 +822,7 @@
 		};
 		39E8D362215DF28300DF9ADD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC9789CBC7FC67EF76A701D3 /* Pods-FishingBasketUITests.release.xcconfig */;
+			baseConfigurationReference = 9DFFBD57705F384E4AC7B49E /* Pods-FishingBasketUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

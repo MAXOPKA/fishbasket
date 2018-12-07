@@ -20,6 +20,8 @@ class CounterView: UIView {
     let button = UIButton()
     button.layer.cornerRadius = 64
     button.backgroundColor = UIColor.yellow
+    button.setTitle("+", for: .normal)
+    button.titleLabel?.font = button.titleLabel?.font.withSize(72)
     
     return button
   }()
@@ -32,6 +34,9 @@ class CounterView: UIView {
   
   lazy var timer: UILabel = {
     let label = UILabel()
+    label.backgroundColor = UIColor.gray
+    label.text = "1:30"
+    label.layer.cornerRadius = 4
     
     return label
   }()
@@ -54,7 +59,12 @@ class CounterView: UIView {
   }
   
   private func setupConstraints() {
-    incrementButton.snp.makeConstraints { (make) in
+    self.timer.snp.makeConstraints { (make) in
+      make.left.equalToSuperview().offset(24)
+      make.top.equalToSuperview().offset(16)
+    }
+    
+    self.incrementButton.snp.makeConstraints { (make) in
       make.height.width.equalTo(128)
       make.center.equalToSuperview()
     }

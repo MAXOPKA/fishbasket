@@ -18,6 +18,9 @@ class CounterView: UIView {
   
   lazy var incrementButton: UIButton = {
     let button = UIButton()
+    button.layer.cornerRadius = 64
+    button.backgroundColor = UIColor.yellow
+    
     return button
   }()
   
@@ -29,6 +32,7 @@ class CounterView: UIView {
   override init(frame: CGRect) {
     super.init(frame: frame)
     self.setupSubviews()
+    self.setupConstraints()
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -36,12 +40,15 @@ class CounterView: UIView {
   }
   
   private func setupSubviews() {
-    self.addSubview(counterView)
-    self.addSubview(incrementButton)
-    self.addSubview(otherWeight)
+    self.addSubview(self.counterView)
+    self.addSubview(self.incrementButton)
+    self.addSubview(self.otherWeight)
   }
   
   private func setupConstraints() {
-    
+    incrementButton.snp.makeConstraints { (make) in
+      make.height.width.equalTo(128)
+      make.center.equalToSuperview()
+    }
   }
 }

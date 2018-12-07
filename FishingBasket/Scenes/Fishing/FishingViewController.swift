@@ -73,7 +73,7 @@ class FishingViewController: UIViewController, FishingDisplayLogic {
   }()
   
   lazy var counterView: UIView = {
-    let view = UIView()
+    let view = CounterView()
     view.backgroundColor = UIColor.red
     return view
   }()

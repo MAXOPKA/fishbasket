@@ -26,7 +26,14 @@ class CounterView: UIView {
   
   lazy var otherWeight: UIView = {
     let view = UIView()
+    
     return view
+  }()
+  
+  lazy var timer: UILabel = {
+    let label = UILabel()
+    
+    return label
   }()
   
   override init(frame: CGRect) {
@@ -43,6 +50,7 @@ class CounterView: UIView {
     self.addSubview(self.counterView)
     self.addSubview(self.incrementButton)
     self.addSubview(self.otherWeight)
+    self.addSubview(self.timer)
   }
   
   private func setupConstraints() {

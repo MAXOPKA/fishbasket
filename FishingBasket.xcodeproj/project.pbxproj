@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39216BC221BAB6310001471E /* SharedColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39216BC121BAB6310001471E /* SharedColors.swift */; };
 		393BA08721B41B5300D2A819 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BA08621B41B5300D2A819 /* CounterView.swift */; };
 		393BA08B21B421C300D2A819 /* FishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BA08A21B421C300D2A819 /* FishesView.swift */; };
 		393BA08D21B421E600D2A819 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393BA08C21B421E600D2A819 /* WeightView.swift */; };
@@ -74,6 +75,7 @@
 		0946270D96F8E17C49D856A6 /* Pods_FishingBasket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18218EBFC6791F9FDEC542D0 /* Pods-FishingBasket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasket.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasket/Pods-FishingBasket.release.xcconfig"; sourceTree = "<group>"; };
 		2516C5D8539EC534F0502E2C /* Pods_FishingBasketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39216BC121BAB6310001471E /* SharedColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedColors.swift; sourceTree = "<group>"; };
 		393BA08621B41B5300D2A819 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		393BA08A21B421C300D2A819 /* FishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesView.swift; sourceTree = "<group>"; };
 		393BA08C21B421E600D2A819 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		393BA08821B41FB500D2A819 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				39216BC121BAB6310001471E /* SharedColors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 				39E8D373215E0ECF00DF9ADD /* SettingsViewController.swift in Sources */,
 				39E8D38D215E0F0700DF9ADD /* FishingRouter.swift in Sources */,
 				393BA08F21B4224900D2A819 /* FishItem.swift in Sources */,
+				39216BC221BAB6310001471E /* SharedColors.swift in Sources */,
 				39E8D39A215E0F1B00DF9ADD /* FishingsWorker.swift in Sources */,
 				393BA09121B4234300D2A819 /* WeightItem.swift in Sources */,
 				39E8D39F215E0F1B00DF9ADD /* FishingsConfigurator.swift in Sources */,

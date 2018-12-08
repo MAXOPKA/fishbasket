@@ -49,6 +49,11 @@
 		39E8D39D215E0F1B00DF9ADD /* FishingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D396215E0F1B00DF9ADD /* FishingsViewController.swift */; };
 		39E8D39E215E0F1B00DF9ADD /* FishingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D397215E0F1B00DF9ADD /* FishingsInteractor.swift */; };
 		39E8D39F215E0F1B00DF9ADD /* FishingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8D398215E0F1B00DF9ADD /* FishingsConfigurator.swift */; };
+		39EB072321BBB47100C72071 /* Fisherman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB072221BBB47100C72071 /* Fisherman.swift */; };
+		39EB072521BBB4F300C72071 /* Fishing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB072421BBB4F300C72071 /* Fishing.swift */; };
+		39EB072721BBB5BB00C72071 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB072621BBB5BB00C72071 /* Fish.swift */; };
+		39EB072A21BBB5DF00C72071 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB072921BBB5DF00C72071 /* Timer.swift */; };
+		39EB072C21BBBCC000C72071 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB072B21BBBCC000C72071 /* Species.swift */; };
 		BA15BFB050122F5EB16DBA53 /* Pods_FishingBasketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6E93173FBD5B1C95E14148 /* Pods_FishingBasketUITests.framework */; };
 		CDE4DEAA4974CBFE2339243E /* Pods_FishingBasket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0946270D96F8E17C49D856A6 /* Pods_FishingBasket.framework */; };
 		F2AA8FC3B19F79A834225E8B /* Pods_FishingBasketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516C5D8539EC534F0502E2C /* Pods_FishingBasketTests.framework */; };
@@ -123,6 +128,11 @@
 		39E8D396215E0F1B00DF9ADD /* FishingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsViewController.swift; sourceTree = "<group>"; };
 		39E8D397215E0F1B00DF9ADD /* FishingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsInteractor.swift; sourceTree = "<group>"; };
 		39E8D398215E0F1B00DF9ADD /* FishingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingsConfigurator.swift; sourceTree = "<group>"; };
+		39EB072221BBB47100C72071 /* Fisherman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fisherman.swift; sourceTree = "<group>"; };
+		39EB072421BBB4F300C72071 /* Fishing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fishing.swift; sourceTree = "<group>"; };
+		39EB072621BBB5BB00C72071 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		39EB072921BBB5DF00C72071 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		39EB072B21BBBCC000C72071 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
 		5B6E93173FBD5B1C95E14148 /* Pods_FishingBasketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B207EC29936089AE3FED6E /* Pods-FishingBasketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketTests/Pods-FishingBasketTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DFFBD57705F384E4AC7B49E /* Pods-FishingBasketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketUITests/Pods-FishingBasketUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +221,8 @@
 		39E8D331215DF28000DF9ADD /* FishingBasket */ = {
 			isa = PBXGroup;
 			children = (
+				39EB072821BBB5C900C72071 /* Models */,
+				39EB072121BBB42800C72071 /* DomainModels */,
 				393BA08921B41FC400D2A819 /* Components */,
 				393BA08821B41FB500D2A819 /* Extensions */,
 				39E8D363215E07FE00DF9ADD /* Scenes */,
@@ -309,6 +321,25 @@
 				39E8D36E215E0ECF00DF9ADD /* SettingsConfigurator.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		39EB072121BBB42800C72071 /* DomainModels */ = {
+			isa = PBXGroup;
+			children = (
+				39EB072221BBB47100C72071 /* Fisherman.swift */,
+				39EB072421BBB4F300C72071 /* Fishing.swift */,
+				39EB072621BBB5BB00C72071 /* Fish.swift */,
+				39EB072B21BBBCC000C72071 /* Species.swift */,
+			);
+			path = DomainModels;
+			sourceTree = "<group>";
+		};
+		39EB072821BBB5C900C72071 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39EB072921BBB5DF00C72071 /* Timer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		85172742392F21FB2BEAB37A /* Frameworks */ = {
@@ -560,8 +591,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EB072A21BBB5DF00C72071 /* Timer.swift in Sources */,
 				39E8D335215DF28000DF9ADD /* ViewController.swift in Sources */,
 				39E8D38F215E0F0700DF9ADD /* FishingViewController.swift in Sources */,
+				39EB072521BBB4F300C72071 /* Fishing.swift in Sources */,
 				39E8D37F215E0EF000DF9ADD /* ArchiveFishingRouter.swift in Sources */,
 				39E8D39D215E0F1B00DF9ADD /* FishingsViewController.swift in Sources */,
 				39E8D375215E0ECF00DF9ADD /* SettingsConfigurator.swift in Sources */,
@@ -574,11 +607,13 @@
 				39E8D391215E0F0700DF9ADD /* FishingConfigurator.swift in Sources */,
 				39E8D383215E0EF000DF9ADD /* ArchiveFishingConfigurator.swift in Sources */,
 				39E8D39B215E0F1B00DF9ADD /* FishingsRouter.swift in Sources */,
+				39EB072721BBB5BB00C72071 /* Fish.swift in Sources */,
 				39E8D381215E0EF000DF9ADD /* ArchiveFishingViewController.swift in Sources */,
 				39E8D38C215E0F0700DF9ADD /* FishingWorker.swift in Sources */,
 				39E8D371215E0ECF00DF9ADD /* SettingsRouter.swift in Sources */,
 				39E8D37D215E0EF000DF9ADD /* ArchiveFishingPresenter.swift in Sources */,
 				393BA08D21B421E600D2A819 /* WeightView.swift in Sources */,
+				39EB072C21BBBCC000C72071 /* Species.swift in Sources */,
 				39E8D33B215DF28000DF9ADD /* FishingBasket.xcdatamodeld in Sources */,
 				39E8D36F215E0ECF00DF9ADD /* SettingsPresenter.swift in Sources */,
 				39E8D37E215E0EF000DF9ADD /* ArchiveFishingWorker.swift in Sources */,
@@ -591,6 +626,7 @@
 				39E8D39F215E0F1B00DF9ADD /* FishingsConfigurator.swift in Sources */,
 				39E8D38E215E0F0700DF9ADD /* FishingModels.swift in Sources */,
 				39E8D390215E0F0700DF9ADD /* FishingInteractor.swift in Sources */,
+				39EB072321BBB47100C72071 /* Fisherman.swift in Sources */,
 				39E8D374215E0ECF00DF9ADD /* SettingsInteractor.swift in Sources */,
 				39E8D38B215E0F0700DF9ADD /* FishingPresenter.swift in Sources */,
 				39E8D382215E0EF000DF9ADD /* ArchiveFishingInteractor.swift in Sources */,

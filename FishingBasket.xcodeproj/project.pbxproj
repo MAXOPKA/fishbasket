@@ -54,6 +54,7 @@
 		39EB072721BBB5BB00C72071 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB072621BBB5BB00C72071 /* Fish.swift */; };
 		39EB072A21BBB5DF00C72071 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB072921BBB5DF00C72071 /* Timer.swift */; };
 		39EB072C21BBBCC000C72071 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB072B21BBBCC000C72071 /* Species.swift */; };
+		39EB072E21BD975300C72071 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EB072D21BD975300C72071 /* Statistic.swift */; };
 		BA15BFB050122F5EB16DBA53 /* Pods_FishingBasketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6E93173FBD5B1C95E14148 /* Pods_FishingBasketUITests.framework */; };
 		CDE4DEAA4974CBFE2339243E /* Pods_FishingBasket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0946270D96F8E17C49D856A6 /* Pods_FishingBasket.framework */; };
 		F2AA8FC3B19F79A834225E8B /* Pods_FishingBasketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516C5D8539EC534F0502E2C /* Pods_FishingBasketTests.framework */; };
@@ -133,6 +134,7 @@
 		39EB072621BBB5BB00C72071 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
 		39EB072921BBB5DF00C72071 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		39EB072B21BBBCC000C72071 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		39EB072D21BD975300C72071 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
 		5B6E93173FBD5B1C95E14148 /* Pods_FishingBasketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingBasketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B207EC29936089AE3FED6E /* Pods-FishingBasketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketTests/Pods-FishingBasketTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DFFBD57705F384E4AC7B49E /* Pods-FishingBasketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingBasketUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FishingBasketUITests/Pods-FishingBasketUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				39EB072921BBB5DF00C72071 /* Timer.swift */,
+				39EB072D21BD975300C72071 /* Statistic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39EB072A21BBB5DF00C72071 /* Timer.swift in Sources */,
+				39EB072E21BD975300C72071 /* Statistic.swift in Sources */,
 				39E8D335215DF28000DF9ADD /* ViewController.swift in Sources */,
 				39E8D38F215E0F0700DF9ADD /* FishingViewController.swift in Sources */,
 				39EB072521BBB4F300C72071 /* Fishing.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum FishingModel {
+enum FishingModels {
   // MARK: Use cases
   
   enum Show {

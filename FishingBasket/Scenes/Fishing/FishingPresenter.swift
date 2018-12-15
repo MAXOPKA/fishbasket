@@ -9,7 +9,7 @@
 import UIKit
 
 protocol FishingPresentationLogic {
-  func presentSomething(response: Fishing.Show.Response)
+  func presentSomething(response: FishingModels.Show.Response)
 }
 
 class FishingPresenter: FishingPresentationLogic {
@@ -17,8 +17,8 @@ class FishingPresenter: FishingPresentationLogic {
   
   // MARK: Do something
   
-  func presentSomething(response: Fishing.Show.Response) {
-    let viewModel = Fishing.Show.ViewModel()
+  func presentSomething(response: FishingModels.Show.Response) {
+    let viewModel = FishingModels.Show.ViewModel()
     viewController?.displayFishing(viewModel: viewModel)
   }
 }

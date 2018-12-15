@@ -9,7 +9,7 @@
 import UIKit
 
 protocol FishingBusinessLogic {
-  func doSomething(request: Fishing.Show.Request)
+  func doSomething(request: FishingModels.Show.Request)
 }
 
 protocol FishingDataStore {
@@ -23,11 +23,11 @@ class FishingInteractor: FishingBusinessLogic, FishingDataStore {
   
   // MARK: Do something
   
-  func doSomething(request: Fishing.Show.Request) {
+  func doSomething(request: FishingModels.Show.Request) {
     worker = FishingWorker()
     worker?.doSomeWork()
     
-    let response = Fishing.Show.Response()
+    let response = FishingModels.Show.Response()
     presenter?.presentSomething(response: response)
   }
 }

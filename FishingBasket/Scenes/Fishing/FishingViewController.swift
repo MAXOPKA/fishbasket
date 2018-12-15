@@ -9,7 +9,7 @@
 import UIKit
 
 protocol FishingDisplayLogic: class {
-  func displayFishing(viewModel: Fishing.Show.ViewModel)
+  func displayFishing(viewModel: FishingModels.Show.ViewModel)
 }
 
 class FishingViewController: UIViewController, FishingDisplayLogic {
@@ -56,11 +56,11 @@ class FishingViewController: UIViewController, FishingDisplayLogic {
   // MARK: - Do something
   
   func doShow() {
-    let request = Fishing.Show.Request()
+    let request = FishingModels.Show.Request()
     interactor?.doSomething(request: request)
   }
   
-  func displayFishing(viewModel: Fishing.Show.ViewModel) {
+  func displayFishing(viewModel: FishingModels.Show.ViewModel) {
     //name.text = viewModel.name
   }
   

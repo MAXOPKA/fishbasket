@@ -9,26 +9,22 @@
 import Foundation
 import UIKit
 
-class WeightItem: UIView {
-  lazy var weightLabel: UILabel = {
-    let label = UILabel()
-    return label
-  }()
+class WeightItem: UIButton {
   
-  override init(frame: CGRect) {
-    super.init(frame: frame)
-    self.setupSubviews()
+  var weight: Weight
+  
+  init(weight: Weight) {
+    self.weight = weight
+    super.init(frame: .zero)
+    self.setTitle("\(self.weight.min)-\(self.weight.max)", for: .normal)
   }
   
   required init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
+    fatalError("init(coder:) has not been implemented")
   }
   
-  private func setupSubviews() {
-    self.addSubview(weightLabel)
-  }
-  
-  private func setupConstraints() {
-    
-  }
+//
+//  private func setupConstraints() {
+//
+//  }
 }

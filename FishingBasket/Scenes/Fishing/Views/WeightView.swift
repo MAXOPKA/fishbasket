@@ -65,8 +65,8 @@ class WeightView: UIView {
   }
   
   private func setupWeights() {
-    let weightsTop = [[FP_ZERO, 50], [50, 100], [100, 200], [200, 500]]
-    let weightsBottom = [[500, 1000], [1000, 2000], [2000, 4000], [4000, FP_INFINITE]]
+    let weightsTop: [[Int32]] = [[0, 50], [50, 100], [100, 200], [200, 500]]
+    let weightsBottom: [[Int32]] = [[500, 1000], [1000, 2000], [2000, 4000], [4000, FP_INFINITE]]
     
     self.setupStackOfWeights(stack: self.topWeightsRow, weights: weightsTop)
     self.setupStackOfWeights(stack: self.bottomWeightsView, weights: weightsBottom)
@@ -78,5 +78,10 @@ class WeightView: UIView {
       let weightLabel = WeightItem(weight: weight)
       stack.addArrangedSubview(weightLabel)
     }
+  }
+  
+  private func prepareBeforeDisplay(value: Int32) -> String {
+    return (value == FP_INFINITE) ? "∞" : "\(value)"
+
   }
 }

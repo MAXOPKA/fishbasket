@@ -9,23 +9,29 @@
 import Foundation
 import UIKit
 
-class FishItem: UIView {
-  lazy var fishLabel: UILabel = {
-    let label = UILabel()
-    return label
+class FishItem: UIButton {
+  lazy var fishImage: UIImageView = {
+    let image = UIImageView()
+    return image
   }()
   
-  override init(frame: CGRect) {
-    super.init(frame: frame)
+  var species: Species
+  
+  init(species: Species) {
+    self.species = species
+    super.init(frame: .zero)
     self.setupSubviews()
+    self.setTitle(self.species.name, for: .normal)
+    self.fishImage.image = UIImage()
+    // self.fishImage.image.
   }
   
   required init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
+    fatalError("init(coder:) has not been implemented")
   }
   
   private func setupSubviews() {
-    self.addSubview(fishLabel)
+    self.addSubview(self.fishImage)
   }
   
   private func setupConstraints() {

@@ -9,9 +9,6 @@
 import Foundation
 
 class Fish {
-  private var counter = 0
+  private var weight = 1
   
-  public func howMuchIsThe() -> Int {
-    return self.counter
-  }
 }

@@ -67,7 +67,7 @@ class FishingViewController: UIViewController, FishingDisplayLogic {
   // MARK: - Setup UI
   
   lazy var fishesView: UIView = {
-    let view = UIView()
+    let view = FishesView()
     view.backgroundColor = UIColor.gray
     return view
   }()
